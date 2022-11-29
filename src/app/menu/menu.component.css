@@ -5,10 +5,18 @@
   --bg-secondary: #141418;
   --transition-speed: 600ms;
 }
- 
+::ng-deep .navbar {
+  z-index: 999;
+}
 .navbar {
   position: fixed;
-  background-color: var(--bg-primary);
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    180deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 0%,
+    rgba(0, 212, 255, 1) 100%
+  );
   transition: width 600ms ease;
   overflow: hidden;
 }
